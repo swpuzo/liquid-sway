@@ -82,5 +82,5 @@ fc-cache -fv
 ## Once installed, do this
 Open the terminal and enter the command ``` nano ~/.config/waybar/config
 ```
-Press Ctrl + W and find "clock": {
+Press Ctrl + W and find "clock": 
 Replace London with your city
