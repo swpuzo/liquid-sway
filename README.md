@@ -11,4 +11,4 @@ Minimalist configuration for SwayFX (Wayland).
 | **Bar** | Waybar | Custom CSS, MPRIS, & Pomodoro |
 | **Terminal** | Kitty | Custom Theme |
 | **Launcher** |	Rofi |	Run / Drun / Window modes
-| **Compositor** | Native 	SwayFX handles composition
+| **Compositor** | Native |	SwayFX handles composition
