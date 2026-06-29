@@ -86,7 +86,9 @@ cp ~/.config/liquid-sway ~/.config/
 ```
 
 # Once installed, do this
-Open the terminal and enter the command nano ```~/.config/waybar/config
+Open the terminal and enter the command nano 
+```bash
+~/.config/waybar/config
 ```
 Press Ctrl + W and find "timezone" 
 Replace London with your city
