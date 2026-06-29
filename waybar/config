@@ -1,0 +1,93 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "spacing": 0,
+    "margin-top": 5,
+    "margin-left": 12,
+    "margin-right": 12,
+
+    "modules-left": [
+        "sway/workspaces"
+    ],
+    "modules-center": [
+        "clock",
+        "mpris"
+    ],
+    "modules-right": [
+        "sway/language",
+        "bluetooth",
+        "pulseaudio",
+        "network",
+        "battery",
+        "custom/power"
+    ],
+
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}"
+    },
+
+    "clock": {
+        "format": " {:%H:%M}",
+        "timezone": "Europe/London",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "timezones": [
+        "Europe/Moscow",
+        "Europe/London",
+        "America/New_York",
+        "Asia/Tokyo"
+    ]
+    },
+
+    "sway/language": {
+        "format": "{short}",
+        "format-en": "us",
+        "format-ru": "ru",
+        "format-uk": "ua"
+    },
+
+    "bluetooth": {
+        "format": "",
+        "format-disabled": "  ",
+        "format-connected": "  ",
+        "on-click": "kitty bluetoothctl"
+    },
+    
+    "network": {
+        "format-wifi": "",
+        "format-ethernet": "  ",
+        "format-disconnected": "  ",
+        "on-click": "kitty nmtui"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% ",
+        "format-charging": "{capacity}%   "
+    },
+
+    "pulseaudio": {
+        "format": "",
+        "format-muted": "",
+        "on-click": "pavucontrol",
+        "interval": 1,
+        "max-volume": 100
+},
+    "custom/power": {
+        "format": "⏻",
+        "on-click": "swaynag -t warning -m 'Turn off PC?' -b 'Shutdown' 'shutdown now' -b 'Reboot' 'reboot'"
+},
+"mpris": {
+    "format": ">> {artist} - {title}",
+    "format-paused": "|| {artist} - {title}",
+    "max-length": 35,
+    "player-icons": {
+        "default": "   "
+     }
+  }
+}

@@ -1,0 +1,89 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background-color: rgba(20, 20, 20, 0.6); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 10px;
+    padding: 3px 14px;
+}
+
+#workspaces button,
+#clock,
+#language,
+#bluetooth,
+#pulseaudio,
+#network,
+#battery,
+#custom-power {
+    color: #ffffff;
+    background: transparent;
+    padding: 0 8px;
+    margin: 0;
+}
+
+#language {
+    font-size: 11px;
+}
+
+#custom-power {
+    color: #f38ba8;
+}
+
+#custom-power:hover {
+    color: #ff0000;
+    transition: color 0.15s ease-in-out;
+}
+
+#workspaces button {
+    min-width: 16px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#workspaces button:hover {
+    box-shadow: none;
+    text-shadow: none;
+    background: transparent;
+    color: #ffffff;
+}
+#pulseaudio {
+    margin-right: 3px;
+}
+
+#network {
+   margin-left: 3px;
+   margin-right: 5px;
+}
+
+#battery {
+   margin-left: -2px;
+   margin-right: 2px;
+}
+
+#custom-power {
+    margin-left: 2;
+    margin-right: 2px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#mpris {
+    color: #ffffff;
+}
