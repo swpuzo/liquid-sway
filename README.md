@@ -3,7 +3,10 @@ Minimalist configuration for SwayFX (Wayland).
 
 ## Preview
 <img width="1923" height="1080" alt="image" src="https://github.com/user-attachments/assets/4d55e59b-ff34-469c-b0b8-cbc777a4c378" />
-[Project WebSite](https://liquid-sway.netlify.app/)
+<a href="https://liquid-sway.netlify.app/" target="_blank">
+  <img src="https://shields.io" alt="Demo">
+</a>
+
 
 
 ## Components
