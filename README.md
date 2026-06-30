@@ -32,6 +32,8 @@ Minimalist configuration for SwayFX (Wayland).
 | `Mod` + `Enter` | Open Terminal | `$term (Kitty)` |
 | `Mod` + `d` | App Launcher | `rofi -show drun` |
 | `Mod` + `c` | Clipboard Manager | `cliphist` |
+| `Mod` + `b` | Browser | `firefox` |
+| `Mod` + `n` | File Manager | `dolphin` |
 | **Navigation & Workspaces** | | |
 | `Mod` + `Tab` | Visual Window List | `rofi -show window` |
 | **System** | | |
