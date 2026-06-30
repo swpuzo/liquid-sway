@@ -98,4 +98,5 @@ nano ~/.config/waybar/config
 ```
 Press Ctrl + W and find "timezone" 
 Replace London with your city.
+
 In the "Pictures" directory, paste the wallpaper file in the format and name wallpaper.jpg
