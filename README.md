@@ -57,7 +57,7 @@ Minimalist configuration for SwayFX (Wayland).
 # Install
 ## Arch Linux
 ```bash
-sudo pacman -S git sway swayfx autotiling swaybg waybar kitty rofi swaylock papirus-icon-theme ttf-fira-code ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols gsimplecal
+sudo pacman -S git swayfx autotiling swaybg waybar kitty rofi swaylock papirus-icon-theme ttf-fira-code ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols gsimplecal
 cd ~
 git clone https://github.com/swpuzo/liquid-sway
 cp -r ~/liquid-sway/* ~/.config/
@@ -65,7 +65,7 @@ rm -rf ~/liquid-sway
 ```
 ## Fedora Linux
 ```bash
-sudo dnf install -y git sway autotiling swaybg waybar kitty rofi-wayland swaylock papirus-icon-theme fira-code-fonts jetbrains-mono-fonts google-noto-sans-symbols-fonts nerd-fonts-repo-fonts jetbrains-mono-nerd-fonts
+sudo dnf install -y git autotiling swaybg waybar kitty rofi-wayland swaylock papirus-icon-theme fira-code-fonts jetbrains-mono-fonts google-noto-sans-symbols-fonts nerd-fonts-repo-fonts jetbrains-mono-nerd-fonts
 sudo dnf copr enable swayfx/swayfx -y && sudo dnf install -y swayfx
 sudo dnf install gsimplecal
 cd ~
@@ -75,7 +75,7 @@ rm -rf ~/liquid-sway
 ```
 ## Debian 
 ```bash
-sudo apt update && sudo apt install -y git sway autotiling swaybg waybar kitty rofi swaylock papirus-icon-theme fonts-firacode
+sudo apt update && sudo apt install -y git autotiling swaybg waybar kitty rofi swaylock papirus-icon-theme fonts-firacode
 sudo apt install -y meson pkg-config cmake git scdoc wayland-protocols \
 libwayland-dev libpcre2-dev libjson-c-dev libpango1.0-dev libcairo2-dev \
 libgdk-pixbuf-2.0-dev libpciaccess-dev libinput-dev libxkbcommon-dev \
