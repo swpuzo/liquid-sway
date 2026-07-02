@@ -1,0 +1,98 @@
+window#waybar {
+    background-color: transparent;
+    font-family: "JetBrainsMono Nerd Font", "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#workspaces {
+    background-color: rgba(20, 24, 30, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 0px 4px;
+    padding: 0px 2px;
+}
+
+#workspaces button {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    margin: 3px 2px;
+    padding: 0px 8px;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: #7dcfff;
+    color: #1a1b26;
+}
+
+#workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#custom-launcher {
+    background-color: rgba(20, 24, 30, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 0px 4px;
+    padding: 2px 14px;
+    color: #ffffff;
+}
+
+#custom-language {
+    background-color: rgba(20, 24, 30, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 0px 4px;
+    padding: 2px 14px;
+    color: #ffffff;
+}
+
+#clock,
+#pulseaudio,
+#network,
+#battery,
+#custom-power {
+    background-color: rgba(20, 24, 30, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 0px 4px;
+    padding: 2px 14px;
+    color: #ffffff;
+}
+
+#custom-spotify {
+    background-color: rgba(125, 207, 255, 0.12);
+    border-radius: 12px;
+    border: 1px solid rgba(125, 207, 255, 0.3);
+    margin: 0px 4px;
+    padding: 2px 14px;
+    color: #7dcfff;
+}
+
+#battery.charging, #battery.plugged {
+    color: #9ece6a;
+}
+
+#battery.warning {
+    color: #e0af68;
+}
+
+#battery.critical:not(.charging) {
+    color: #f7768e;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: rgba(247, 118, 142, 0.2);
+        color: #ffffff;
+    }
+}
