@@ -2,13 +2,7 @@
 Minimalist configuration for SwayFX (Wayland).
 
 ## Preview
-<img width="1923" height="1080" alt="image" src="https://github.com/user-attachments/assets/4d55e59b-ff34-469c-b0b8-cbc777a4c378" />
-<p align="center">
-<a href="https://liquid-sway.netlify.app/" target="_blank">
-  <img src="https://shields.io" alt="WebSite">
-</a>
-</p>
-
+<img width="1921" height="1080" alt="image" src="https://github.com/user-attachments/assets/9df8dac6-f791-428c-ad1e-08b944296d46" />
 
 ## Components
 | Component | Application | Notes |
@@ -63,7 +57,7 @@ git clone https://github.com/swpuzo/liquid-sway
 cp -r ~/liquid-sway/* ~/.config/
 rm -rf ~/liquid-sway
 ```
-## Fedora Linux
+## Fedora 
 ```bash
 sudo dnf install -y git autotiling swaybg waybar kitty rofi-wayland swaylock papirus-icon-theme fira-code-fonts jetbrains-mono-fonts google-noto-sans-symbols-fonts nerd-fonts-repo-fonts jetbrains-mono-nerd-fonts
 sudo dnf copr enable swayfx/swayfx -y && sudo dnf install -y swayfx
