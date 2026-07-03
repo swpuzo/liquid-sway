@@ -28,10 +28,11 @@ Minimalist configuration for SwayFX (Wayland).
 | `Mod` + `c` | Clipboard Manager | `cliphist` |
 | `Mod` + `b` | Browser | `firefox` |
 | `Mod` + `n` | File Manager | `dolphin` |
+| `Mod` + `w` |  | `Wallpaper Manager` | `waypaper` |
 | **Navigation & Workspaces** | | |
 | `Mod` + `Tab` | Visual Window List | `rofi -show window` |
 | **System** | | |
-| `Mod` + `Shift` + `q` | Kill Focused Window | `kill` |
+| `Mod` + `q` | Kill Focused Window | `kill` |
 | `Mod` + `Shift` + `x` | Lock Screen | `swaylock` |
 | `Mod` + `Shift` + `c` | Reload Configuration | `reload` |
 | `Mod` + `Shift` + `e` | Exit Sway | `swaynag` |
