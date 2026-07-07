@@ -57,45 +57,9 @@ Minimalist configuration for SwayFX (Wayland).
 # Install
 ## Arch Linux
 ```bash
-sudo pacman -S git swayfx autotiling swaybg waybar kitty rofi swaylock papirus-icon-theme ttf-fira-code ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols gsimplecal
-yay -S waypaper
-cd ~
-git clone https://github.com/swpuzo/liquid-sway
-cp -r ~/liquid-sway/* ~/.config/
-rm -rf ~/liquid-sway
-```
-## Fedora 
-```bash
-sudo dnf install -y git autotiling swaybg waybar kitty rofi-wayland swaylock papirus-icon-theme fira-code-fonts jetbrains-mono-fonts google-noto-sans-symbols-fonts nerd-fonts-repo-fonts jetbrains-mono-nerd-fonts
-sudo dnf copr enable swayfx/swayfx -y && sudo dnf install -y swayfx
-sudo dnf install gsimplecal
-sudo dnf copr enable solopasha/hyprland
-sudo dnf install waypaper
-cd ~
-git clone https://github.com/swpuzo/liquid-sway
-cp -r ~/liquid-sway/* ~/.config/
-rm -rf ~/liquid-sway
-```
-## Debian 
-```bash
-sudo apt update && sudo apt install -y git autotiling swaybg waybar kitty rofi swaylock papirus-icon-theme fonts-firacode
-sudo apt install -y meson pkg-config cmake git scdoc wayland-protocols \
-libwayland-dev libpcre2-dev libjson-c-dev libpango1.0-dev libcairo2-dev \
-libgdk-pixbuf-2.0-dev libpciaccess-dev libinput-dev libxkbcommon-dev \
-libpixman-1-dev libudev-dev libgbm-dev libgles2-mesa-dev libseat-dev
-mkdir -p ~/build && cd ~/build
-git clone https://github.com/WillPower3309/swayfx.git
-cd swayfx
-meson setup build/
-ninja -C build/
-sudo ninja -C build/ install
-mkdir -p ~/.local/share/fonts
-sudo apt install -y fonts-font-awesome
-fc-cache -fv
-sudo apt install gsimplecal
-sudo apt update
-sudo apt install python3-pip pipx python3-gi python3-pil
-pipx install waypaper
+sudo pacman -S git swayfx autotiling swaybg waybar kitty rofi swaylock papirus-icon-theme ttf-fira-code ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols gsimplecal wtype rofi-emoji
+yay -S waypaper 
+
 cd ~
 git clone https://github.com/swpuzo/liquid-sway
 cp -r ~/liquid-sway/* ~/.config/
