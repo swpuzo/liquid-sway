@@ -34,6 +34,7 @@ Minimalist configuration for SwayFX (Wayland).
 | `Mod` + `b` | Browser | `firefox` |
 | `Mod` + `n` | File Manager | `dolphin` |
 | `Mod` + `w` | Wallpaper Manager | `waypaper` |
+| `Mod` + `.` | Emoji Launcher | `rofi -show emoji` |
 | **Navigation & Workspaces** | | |
 | `Mod` + `Tab` | Visual Window List | `rofi -show window` |
 | **System** | | |
