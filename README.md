@@ -2,7 +2,7 @@
 Minimalist configuration for SwayFX (Wayland).
 
 ## Preview
-<img width="1919" height="1080" alt="image" src="https://github.com/user-attachments/assets/b8272e66-942f-4317-a4d9-987ae4dad4a0" />
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/d75f462f-ecd9-4dbd-8cad-94081f1712d6" />
 
 ## Wallpapers
 <img width="3840" height="2160" alt="wallpaper" src="https://github.com/user-attachments/assets/14a70933-313b-40db-bc48-8e7d1f42bd31" />
