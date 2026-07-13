@@ -1,4 +1,4 @@
-# liquid-sway
+# liquid-shell
 Minimalist configuration for SwayFX (Wayland).
 
 ## Preview
