@@ -61,7 +61,7 @@ Minimalist configuration for SwayFX (Wayland).
 ```bash
 sudo pacman -Syu
 sudo pacman -S git swayfx autotiling swaybg waybar kitty rofi swaylock papirus-icon-theme ttf-fira-code ttf-jetbrains-mono-nerd ttf-nerd-fonts-symbols gsimplecal wtype rofi-emoji dolphin wlogout
-yay -S waypaper 
+yay -S waytrogen
 cd ~
 git clone https://github.com/swpuzo/liquid-sway
 cp -r ~/liquid-sway/* ~/.config/
