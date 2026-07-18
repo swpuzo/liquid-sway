@@ -1,92 +1,142 @@
 configuration {
-    modi: "run,drun,emoji";
-    show-icons: true;
-    terminal: "kitty";
-    drun-display-format: "{icon} {name}";
-    display-drun: "Apps";
-    display-run: "Run";
+    modi:                        "drun,run,filebrowser,window";
+    show-icons:                  true;
+    display-drun:                "";
+    display-run:                 "";
+    display-filebrowser:         "";
+    display-window:              "";
+    drun-display-format:         "{name}";
+    hover-select:                true;
+    me-select-entry:             "MousePrimary";
+    me-accept-entry:             "MouseDPrimary";
+    terminal:                    "alacritty"; 
+}
+
+* {
+    bg-dark:     rgba(10, 12, 16, 0.65); 
+    fg-main:     #c9d1d9;
+    accent-gold: #e3b341;
+    accent-blue: #58a6ff;
+    border-col:  rgba(45, 50, 60, 0.5);
+    font:        "JetBrainsMono Nerd Font 10";
 }
 
 window {
-    background-color: argb:cc0a0a0a;
-    border: 1px;
-    border-color: argb:25ffffff;
-    border-radius: 12px;
-    width: 550px;
-    padding: 15px;
+    width:            525px;
+    height:           615px;
+    x-offset:         0px;
+    y-offset:         0px;
+    transparency:     "real";
+    background-color: @bg-dark;
+    border:           2px;
+    border-color:     @border-col;
+    border-radius:    18px;
+    cursor:           "default";
 }
 
 mainbox {
+    spacing:          10px;
+    padding:          15px;
     background-color: transparent;
-    children: [ inputbar, listview ];
+    children:         [ inputbar, mode-switcher, listview, textbox-num-elements ];
 }
 
 inputbar {
-    background-color: argb:0effffff;
-    border-radius: 8px;
-    border: 1px;
-    border-color: argb:1fffffff;
-    children: [ prompt, entry ];
-    margin: 0px 0px 10px 0px;
-}
-
-prompt {
-    background-color: argb:25ffffff;
-    padding: 8px 14px;
-    border-radius: 8px;
-    text-color: #ffffff;
+    spacing:          6px;
+    padding:          8px 14px;
+    background-color: transparent;
+    border:           1.5px;
+    border-radius:    20px;
+    border-color:     rgba(112, 128, 144, 0.4);
+    text-color:       @fg-main;
+    children:         [ entry ];
 }
 
 entry {
     background-color: transparent;
-    text-color: #e0e0e0;
-    padding: 8px;
-    margin: 0px 0px 0px 5px;
+    text-color:       inherit;
+    cursor:           text;
+    placeholder:      "";
+}
+
+mode-switcher {
+    spacing:          6px;
+    background-color: transparent;
+}
+
+button {
+    padding:          6px;
+    border:           1px;
+    border-radius:    8px;
+    border-color:     @border-col;
+    background-color: rgba(10, 12, 16, 0.3);
+    text-color:       @fg-main;
+    cursor:           pointer;
+}
+
+button selected {
+    background-color: @accent-gold;
+    text-color:       #0a0c10;
+    border-color:     @accent-gold;
 }
 
 listview {
+    columns:          5;
+    rows:             4;
+    cycle:            true;
+    dynamic:          true;
+    scrollbar:        false;
+    layout:           vertical;
+    reverse:          false;
+    fixed-height:     true;
+    fixed-columns:    true;
+    spacing:          10px;
     background-color: transparent;
-    lines: 7;
-    columns: 1;
-    fixed-height: true;
-    spacing: 4px;
 }
 
 element {
-    padding: 8px;
-    border-radius: 8px;
-    border: 0px;
-    background-color: transparent;
-    text-color: #e0e0e0;
+    orientation:      vertical;
+    spacing:          6px;
+    padding:          10px 4px;
+    border-radius:    12px;
+    cursor:           pointer;
+}
+
+element normal.normal,
+element alternate.normal,
+element normal.urgent,
+element alternate.urgent,
+element normal.active,
+element alternate.active {
+    background-color: rgba(5, 6, 8, 0.55);
+    text-color:       @fg-main;
+}
+
+element selected.normal,
+element selected.urgent,
+element selected.active {
+    background-color: rgba(88, 166, 255, 0.75);
+    text-color:       #0a0c10;
 }
 
 element-icon {
+    size:             36px;
+    cursor:           inherit;
     background-color: transparent;
-    text-color: inherit;
+    horizontal-align: 0.5;
 }
 
 element-text {
+    horizontal-align: 0.5;
+    cursor:           inherit;
     background-color: transparent;
-    text-color: inherit;
+    text-color:       inherit;
 }
 
-element selected {
-    background-color: argb:25ffffff;
-    text-color: #ffffff;
-    border: 0px;
-}
-
-element selected.normal {
-    background-color: argb:25ffffff;
-    text-color: #ffffff;
-}
-
-element normal.normal {
+textbox-num-elements {
+    expand:           false;
+    alignment:        vertical;
+    text-color:       #484f58;
     background-color: transparent;
-    text-color: #e0e0e0;
-}
-
-element alternate.normal {
-    background-color: transparent;
-    text-color: #e0e0e0;
+    margin:           2px 0px 0px 4px;
 }
