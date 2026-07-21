@@ -67,9 +67,9 @@
         "format-muted": " Muted",
         "format-icons": {
             "headphone": "",
-            "default": ["", "", ""],
-            "on-click": "blueman-manager"             
+            "default": ["", "", ""],             
         }
+         "on-click": "blueman-manager"
     },
     "network": {
         "format-wifi": "  {essid}",
